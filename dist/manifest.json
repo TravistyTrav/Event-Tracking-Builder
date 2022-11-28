@@ -1,0 +1,27 @@
+{
+    "name": "Event Tracking Extension",
+    "version": "1.0",
+    "description": "An interactive tool used to build event tracking containers for Google Tag Manager.",
+    "host_permissions": [
+        "http://*/*", "https://*/*"
+    ],
+    "permissions": [
+        "storage",
+        "webRequest",
+        "declarativeNetRequest"
+    ],
+    "content_scripts": [
+        {
+            "js": ["js/background.js"],
+            "matches": [
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developer.chrome.com/docs/webstore/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "img/icons/icon-16.png"
+    },
+    "manifest_version": 3
+}

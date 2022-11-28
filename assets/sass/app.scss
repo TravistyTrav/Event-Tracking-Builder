@@ -1,0 +1,57 @@
+$base-color: #fff;
+$primary-color: #ffc09f;
+$secondary-color: #edf2fb;
+
+.spacer {
+    margin-top: 25px;
+}
+
+p {
+    font-size: 14px;
+}
+
+#app {
+    font-family: 'Mukta',sans-serif;
+}
+
+#popup-wrapper {
+    background: #fff;
+    font-size: 13px;
+    margin: 0;
+
+    max-width: 600px;
+    width: 452px;
+}
+
+img {
+    width: 100%;
+}
+
+.head-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 10px 25px;
+    background: $primary-color;
+    
+    .logo {
+        flex-basis: 30%;
+        text-align: right;
+
+        img {
+            max-width: 60px;
+        }
+    }
+
+    .app-heading {
+        flex-basis: 70%;
+        text-align: left;
+
+        h1 {
+            color: white;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
+        }
+    }
+}
+
